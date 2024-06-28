@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "SF Pro";
+  src: url("/SFPRODISPLAYREGULAR.OTF");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("/SFPRODISPLAYMEDIUM.OTF");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("/SFPRODISPLAYBOLD.OTF");
+  font-weight: 600;
+}
+
+:root {
+  font-family: "SF Pro", system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+    /* fonts */
+    --font-sf-pro: "SF Pro", system-ui, Helvetica, Arial, sans-serif;
+  
+    /* font sizes */
+    --font-size-smi: 13px;
+    --font-size-xs: 12px;
+    --font-size-base: 16px;
+    --body-size: 14px;
+  
+    /* Colors */
+    --n100: #f8f9fa;
+    --netural-200: #f1f3f5;
+    --n300: #e9ecef;
+    --white: #fff;
+    --color-lightgray-100: #d0d5dd;
+    --netural-500: #ced4da;
+    --netural-800: #495057;
+    --netural-900: #343a40;
+    --yellow-300: #f08c00;
+    --yellow-400: #fbddb3;
+    --netural-700: #868e96;
+    --color-black: #000;
+    --blue-300: #2570ca;
+    --b600-brand: #1170ca;
+    --color-cornflowerblue-100: #1070ca;
+    --b700: #1f5fac;
+    --color-darkslateblue-100: #195396;
+    --color-darkslateblue-200: #143e6f;
+    --navigation-background: #1b1a40;
+    --text-muted: #999fa7;
+    --text-primary: #192435;
+    --info-default: #317ae2;
+    --negative-default: #f94839;
+    --red-100: #fceaea;
+    --red-200: #f6c1c1;
+    --red-300: #e03131;
+    --color-aliceblue: #e6f1ff;
+  
+    /* Gaps */
+    --gap-xl: 20px;
+    --gap-10: 10px;
+    --gap-8: 8px;
+  
+    /* Paddings */
+    --padding-5: 5px;
+    --padding-10: 10px;
+
+    /* margins */
+    --margin-5: 5px;
+    --margin-10: 10px;
+  
+    /* Border radiuses */
+    --br-5: 5px;
+    --br-circle: 50%;
+  
+    /* Effects */
+    --elevation-raised: 0px 0px 1px 1px rgba(0, 0, 0, 0.05),
+      0px 1px 2px -2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.07);
+    --shadow-sm: 0px 1px 2px rgba(16, 24, 40, 0.05);
+
+    /* MUI library css override */
+    .MuiButton-outlined {
+      font-family: SF Pro, sans-serif;
+      justify-content: center;
+      border-radius: 6px;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      border: 1px solid #ced4da;
+      background-color: var(--white);
+      padding: 5px 12px;
+      color: var(--netural-900);
+    }
+    .MuiButton-root {
+      text-transform: capitalize;
+    }
+    .MuiTypography-root {
+      font-family: SF Pro, sans-serif;
+    }
+    .MuiTabs-root {
+      background-color: var(--n300);
+    }
+    .MuiTab-root {
+      padding: 12px 8px;
+      margin-right: 10px;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+    .MuiInputBase-input {
+      font-size: var(--font-size-smi);
+      padding: 11px 14px;
+    }
+    .Mui-error {
+      font-size: var(--font-size-smi);
+      top: -4px;
+    }
+    .MuiTabs-scrollButtons {
+      color: var(--b700)
+    }
+
+    @media (max-width: 991px) {
+      .MuiButton-outlined {
+        white-space: initial;
+      }
+    }
+}
+
+body {
+  margin: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-aliceblue)
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--netural-700);
+}
