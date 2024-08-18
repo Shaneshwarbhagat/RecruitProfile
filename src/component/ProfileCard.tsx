@@ -493,6 +493,8 @@ const ProfileCard = () => {
             onChange={handleTabChange}
             className="profile-tab"
             variant="scrollable"
+            scrollButtons="auto"
+            allowScrollButtonsMobile
           >
             <StyledTab label="All Details" />
             <StyledTab label="Assigned Jobs" />
@@ -525,19 +527,19 @@ const ProfileCard = () => {
 
             <AssignedJob
               title={profileDetail.position}
-              company="Recruit CRM"
+              company="Recruit"
               assignedTo={profileDetail.name}
               assignedDate={profileDetail.lastUpdatedDate}
             />
             <AssignedJob
               title={profileDetail.position}
-              company="Recruit CRM"
+              company="Recruit"
               assignedTo={profileDetail.name}
               assignedDate={profileDetail.lastUpdatedDate}
             />
             <AssignedJob
               title={profileDetail.position}
-              company="Recruit CRM"
+              company="Recruit"
               assignedTo={profileDetail.name}
               assignedDate={profileDetail.lastUpdatedDate}
             />

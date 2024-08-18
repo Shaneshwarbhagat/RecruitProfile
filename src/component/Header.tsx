@@ -19,7 +19,7 @@ interface UserProfileProps {
 const UserProfile: React.FC<UserProfileProps> = ({ name, company, imageSrc }) => (
   <div className="user-profile">
     <div className="profile-container">
-      <img src={imageSrc} alt={`${name}'s profile`} className="profile-image" />
+      <img src={imageSrc} alt={`${name}'s profile`} className="profile-image" style={{borderRadius: "50%"}}/>
       <div className="profile-info">
         <div style={{ fontWeight: 600, fontSize: "12px", lineHeight: "16px" }}>{name}</div>
         <div style={{ fontWeight: 450, fontSize: "12px", lineHeight: "16px" }}>{company}</div>
@@ -38,10 +38,10 @@ const Header: React.FC = () => {
         <div className="search-input">
           <img loading="lazy" src="/24search.svg" alt="" className="search-icon" />
           <label htmlFor="search-pipedrive" className="visually-hidden">Search Pipedrive</label>
-          <input type="text" id="search-pipedrive" className="search-text" placeholder="Search Pipedrive" />
+          <input type="text" id="search-pipedrive" className="search-text" placeholder="Search" />
         </div>
       </div>
-      <img loading="lazy" src="/rcrmlogowatermark.svg" alt="Recruitcrm logo" className="logo" />
+      <img loading="lazy" src="/rcrmlogowatermark.svg" alt="recruit profile logo" className="logo" />
       <nav className="user-actions">
         <img loading="lazy" src="/add.svg" alt="add icon" className="add-user-icon" />
         <div className="divider" />
@@ -50,8 +50,8 @@ const Header: React.FC = () => {
         <ActionIcon src="/bell.svg" alt="Action 3" />
         <UserProfile
           name={profileDetail.lastUpdatedBy}
-          company="Silicon Links Inc"
-          imageSrc="/avatar.png"
+          company="MyCompany org"
+          imageSrc="/avatar.jpg"
         />
       </nav>
     </header>
