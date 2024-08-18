@@ -1,5 +1,5 @@
 
-#Assingment Note
+# Note
 
 1. To run project command is 'npm start' before that do 'npm install' to get all dependencies.
 2. I have use some libraries like axios for api call, reactMUI for designing component(card, tab, button, grid, notification etc.) but as said all css done in plain css only
