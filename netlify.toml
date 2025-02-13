@@ -1,9 +1,9 @@
 [build]
-  command = "npm run build"
-  functions = "netlify/functions"  # Set correct functions directory
-  publish = "dist"  # Adjust if your React app builds elsewhere
+command = "npm run build"
+publish = "dist"
+functions = "netlify/functions"
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/json-server"
-  status = 200
+from = "/api/*"
+to = "/.netlify/functions/json-server"
+status = 200
