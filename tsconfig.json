@@ -8,6 +8,9 @@
       "path": "./tsconfig.node.json"
     }
   ],
-  "noUnusedLocals": false,
-  "noUnusedParameters": false
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "allowJs": true,
+    "checkJs": true,
+  },
 }
