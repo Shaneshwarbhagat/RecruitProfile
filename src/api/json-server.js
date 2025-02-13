@@ -1,9 +1,8 @@
-const jsonServer = require('json-server');
 const server = jsonServer.create();
-const router = jsonServer.router('api/db.json');
+const router = jsonServer.router(__dirname + "/db.json"); // Ensure db.json is in the same directory
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 server.use(router);
 
-exports.handler = server;
+module.exports = server;
