@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "react-scripts start",
-    "build": "netlify-lambda build api",
+    "build": "netlify-lambda build api -o api-build", 
     "serve": "netlify dev",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

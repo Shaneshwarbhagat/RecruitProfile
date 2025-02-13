@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  functions = "api"
+  functions = "api-build"  # Change this to avoid conflict
 
 [[redirects]]
   from = "/api/*"
